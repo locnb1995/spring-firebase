@@ -1,0 +1,13 @@
+network:
+  proxy:
+    enable: true # allows disabling auto-config; enabled by default
+
+    # explicit list of proxy servers with settings
+    servers:
+      # 2: the internet proxy (requires an authentication)
+      -
+        host: 10.225.3.1
+        port: 3128
+        not-for-hosts:
+          - localhost
+          - 127.0.0.1
